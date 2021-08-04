@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/two"
+        android:layout_marginRight="15dp"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/two"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_below="@+id/one"
+        android:layout_toLeftOf="@+id/five"
+        android:layout_marginRight="15dp"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_below="@+id/two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_below="@+id/three"
+        android:layout_toRightOf="@+id/five"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_below="@+id/four"
+        android:layout_toLeftOf="@+id/eight"
+        android:layout_marginRight="15dp"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_below="@+id/five"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_below="@+id/six"
+        android:layout_toRightOf="@+id/eight"
+        android:textSize="80px" />
+
+    <TextView android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nine"
+        android:layout_marginTop="35dp"
+        android:hint="Game Status"
+        android:gravity="center_horizontal"
+        android:textSize="60px"
+        android:textStyle="italic"/>
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:text="Start Game"
+        android:gravity="center"
+        android:textSize="50px"
+        android:layout_height="150px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="80px"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="400dp"
+        android:textStyle="bold"
+        android:background="@color/teal_200"
+        android:onClick="StartGame"
+        tools:ignore="OnClick" />
+
+    <TextView android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@id/start"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="10px"
+        android:hint="Result"
+        android:gravity="center"
+        android:textSize="45px"
+        android:textStyle="bold"
+        android:background="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_below="@id/result"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="45px"
+        android:textStyle="italic" />
+</RelativeLayout>
